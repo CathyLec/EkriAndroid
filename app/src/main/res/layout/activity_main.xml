@@ -15,7 +15,8 @@
         android:text="Cronologia"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="415dp" />
+        tools:layout_editor_absoluteY="415dp"
+        android:onClick="Cronologia"/>
 
     <Button
         android:id="@+id/btnEditor"
@@ -25,7 +26,8 @@
         android:text="Editor"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="44dp" />
+        tools:layout_editor_absoluteY="44dp"
+        android:onClick="EditorDeTexto"/>
 
     <Button
         android:id="@+id/btnLugar"
@@ -35,7 +37,8 @@
         android:text="Lugar"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="166dp" />
+        tools:layout_editor_absoluteY="166dp"
+        android:onClick="EditarLugar"/>
 
     <Button
         android:id="@+id/btnLugares"
@@ -45,7 +48,8 @@
         android:text="Lugares"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="231dp" />
+        tools:layout_editor_absoluteY="231dp"
+        android:onClick="MostrarLugares"/>
 
     <Button
         android:id="@+id/btnPersonajes"
@@ -55,7 +59,8 @@
         android:text="Personajes"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="353dp" />
+        tools:layout_editor_absoluteY="353dp"
+        android:onClick="MostrarPersonajes"/>
 
     <Button
         android:id="@+id/btnPersonaje"
@@ -65,7 +70,8 @@
         android:text="Personaje"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="293dp" />
+        tools:layout_editor_absoluteY="293dp"
+        android:onClick="EditarPersonaje"/>
 
     <Button
         android:id="@+id/btnTextos"
@@ -75,5 +81,6 @@
         android:text="Textos"
         android:textSize="24sp"
         tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="104dp" />
+        tools:layout_editor_absoluteY="104dp"
+        android:onClick="MostrarTextos"/>
 </LinearLayout>
