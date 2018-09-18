@@ -50,18 +50,4 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
 
     }
-
-    public void EditarPersonaje (View view){
-
-        Intent intent = new Intent(MainActivity.this, Perfil.class);
-        startActivity(intent);
-
-    }
-
-    public void EditarLugar (View view){
-
-        Intent intent = new Intent(MainActivity.this, Lugar.class);
-        startActivity(intent);
-
-    }
 }
