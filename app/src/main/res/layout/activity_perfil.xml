@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    android:background="@android:color/white">
 
     <EditText
         android:id="@+id/txtNombre"
@@ -13,7 +14,6 @@
         android:ems="10"
         android:fontFamily="monospace"
         android:inputType="textPersonName"
-        android:text="Lisa Simpson"
         android:textAlignment="center" />
 
     <ImageView
@@ -33,7 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Ubicacion"
+            android:text="Edad"
             android:textAlignment="center"
             android:textSize="18sp" />
 
@@ -44,7 +44,7 @@
             android:layout_weight="1.3"
             android:ems="10"
             android:fontFamily="monospace"
-            android:inputType="textPersonName"
+            android:inputType="number"
             android:textSize="18sp" />
 
     </LinearLayout>
@@ -53,29 +53,40 @@
         android:layout_height="0dp"
         android:orientation="horizontal"
         android:layout_weight="1">
-        <RadioButton
-            android:id="@+id/rbtnMasculino"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:text="M" />
 
-        <RadioButton
-            android:id="@+id/rbtnFemenino"
-            android:layout_width="wrap_content"
+        <RadioGroup
+            android:id="@+id/radioGroupGenero"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:text="F" />
+            android:orientation="horizontal">
 
-        <RadioButton
-            android:id="@+id/rbtnOtro"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:text="Otro" />
+            <RadioButton
+                android:id="@+id/rbtnOtro"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="Otro" />
+
+            <RadioButton
+                android:id="@+id/rbtnFemenino"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="F" />
+
+            <RadioButton
+                android:id="@+id/rbtnMasculino"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="M" />
+        </RadioGroup>
 
     </LinearLayout>
 
@@ -113,7 +124,7 @@
 
 
         <ImageButton
-            android:id="@+id/btnOpen"
+            android:id="@+id/btnBack"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -121,7 +132,8 @@
             android:layout_weight="0.5"
             android:background="@android:color/background_light"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/abrir" />
+            app:srcCompat="@drawable/back"
+            android:onClick="Personajes"/>
 
         <ImageButton
             android:id="@+id/btnAdd"
@@ -143,18 +155,8 @@
             android:layout_weight="0.5"
             android:background="@android:color/background_light"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/save" />
-
-        <ImageButton
-            android:id="@+id/btnDelete"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="0.5"
-            android:background="@android:color/background_light"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/delete" />
+            app:srcCompat="@drawable/save"
+            android:onClick="GuardarPersonje"/>
 
 
     </LinearLayout>

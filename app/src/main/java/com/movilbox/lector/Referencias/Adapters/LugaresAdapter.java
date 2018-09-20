@@ -1,4 +1,4 @@
-package com.movilbox.lector.Referencias;
+package com.movilbox.lector.Referencias.Adapters;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -17,12 +17,12 @@ import com.movilbox.lector.Referencias.Objetos.Lugar;
 import java.util.List;
 
 
-public class TextosAdapteer extends ArrayAdapter<Lugar> {
+public class LugaresAdapter extends ArrayAdapter<Lugar> {
 
     private final List<Lugar> list;
     private final Context context;
 
-    public TextosAdapteer(Context context, List<Lugar> list) {
+    public LugaresAdapter(Context context, List<Lugar> list) {
         super(context, R.layout.list_fila, list);
         this.list = list;
         this.context = context;
@@ -30,7 +30,7 @@ public class TextosAdapteer extends ArrayAdapter<Lugar> {
 
     static class ViewHolder {
 
-        protected ImageView imgDescripcion;
+       // protected ImageView imgDescripcion;
         protected TextView txtTitulo;
         protected TextView txtDescripcion;
 
@@ -46,7 +46,7 @@ public class TextosAdapteer extends ArrayAdapter<Lugar> {
             final ViewHolder viewHolder = new ViewHolder();
             viewHolder.txtTitulo = (TextView) view.findViewById(R.id.txtTitulo);
             viewHolder.txtDescripcion = (TextView) view.findViewById(R.id.txtDescripcion);
-            viewHolder.imgDescripcion = (ImageView) view.findViewById(R.id.imgDescripcion);
+           // viewHolder.imgDescripcion = (ImageView) view.findViewById(R.id.imgDescripcion);
 
             view.setTag(viewHolder);
         }else{

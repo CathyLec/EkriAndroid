@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">LEctor</string>
     <string name="tus_textos">Tus textos</string>
+    <string name="tus_notas">Tus Notas</string>
+    <string name="tu_cronologia">Tu Cronologia</string>
+    <string name="suceso_1">Suceso 1</string>
+    <string name="tus_lugares">Tus lugares</string>
 </resources>

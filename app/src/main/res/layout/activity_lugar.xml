@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    android:background="@android:color/white">
 
     <EditText
         android:id="@+id/txtNombre"
@@ -13,7 +15,6 @@
         android:ems="10"
         android:fontFamily="monospace"
         android:inputType="textPersonName"
-        android:text="Angel de bruma"
         android:textAlignment="center" />
 
     <ImageView
@@ -69,7 +70,7 @@
 
 
         <ImageButton
-            android:id="@+id/btnOpen"
+            android:id="@+id/btnBack"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
@@ -77,7 +78,8 @@
             android:layout_weight="0.5"
             android:background="@android:color/background_light"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/abrir" />
+            app:srcCompat="@drawable/back"
+            android:onClick="Lugares"/>
 
         <ImageButton
             android:id="@+id/btnAdd"
@@ -99,18 +101,8 @@
             android:layout_weight="0.5"
             android:background="@android:color/background_light"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/save" />
-
-        <ImageButton
-            android:id="@+id/btnDelete"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_weight="0.5"
-            android:background="@android:color/background_light"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/delete" />
+            app:srcCompat="@drawable/save"
+            android:onClick="guardarLugar"/>
 
 
     </LinearLayout>

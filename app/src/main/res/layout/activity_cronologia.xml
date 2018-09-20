@@ -1,15 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.movilbox.lector.Cronologia">
-
-
-    <Spinner
-        android:id="@+id/spinner"
+    android:background="@android:color/white">
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnEditor"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2196f3"
+            android:onClick="EditorDeTexto"
+            android:text="Editor" />
+
+        <Button
+            android:id="@+id/btnNotas"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2196f3"
+            android:text="Notas"
+            android:onClick="Notas"/>
+
+        <Button
+            android:id="@+id/btnLugares"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2196f3"
+            android:text="Lugares"
+            android:onClick="MostrarLugares"/>
+
+        <Button
+            android:id="@+id/brnPersonajes"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2196f3"
+            android:onClick="MostrarPersonajes"
+            android:text="Actores" />
+
+        <Button
+            android:id="@+id/btnCronologia"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#2196f3"
+            android:text="Tiempo"
+            android:onClick="Cronologia"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="436dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="14dp"
+        android:layout_weight="0.03"
+        android:fontFamily="monospace"
+        android:text="Cronología"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        tools:textColor="@android:color/black" />
+
+    <ListView
+        android:id="@+id/listSucesos"
+        android:layout_width="match_parent"
+        android:layout_height="328dp"
+        android:layout_marginTop="25dp"
+        android:layout_weight="0.07" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.04"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_light"
+            android:onClick="MostrarTextos"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/back" />
+
+        <ImageButton
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_light"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/save" />
+
+        <ImageButton
+            android:id="@+id/btnAdd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/background_light"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/add"
+            android:onClick="EditorDecronologia"/>
+
+    </LinearLayout>
+
 </LinearLayout>
