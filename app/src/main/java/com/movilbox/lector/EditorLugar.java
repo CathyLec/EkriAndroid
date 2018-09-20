@@ -29,7 +29,6 @@ public class EditorLugar extends AppCompatActivity {
         txtUbicacion = (EditText) findViewById(R.id.txtUbicacion);
         txtDescripcion = (EditText) findViewById(R.id.txtDescripcion);
 
-
         dbLugares = FirebaseDatabase.getInstance().getReference("lugares").child(libros.getListaLibros().get(libros.getLibroSeleccionado()).getId());
     }
     public void Lugares(View view) {

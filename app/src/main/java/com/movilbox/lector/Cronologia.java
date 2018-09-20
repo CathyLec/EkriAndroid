@@ -85,7 +85,7 @@ public class Cronologia extends AppCompatActivity {
             }
         });
     }
-    
+
     public void EditorDeTexto (View view){
 
         Intent intent = new Intent(Cronologia.this, EditorTexto.class);
