@@ -35,8 +35,8 @@
         <activity android:name=".Referencias.Vistas.VistaSuceso" />
         <activity android:name=".Referencias.Vistas.VistaLugar" />
         <activity android:name=".Referencias.Vistas.VistaPersonaje" />
-        <activity android:name=".Login" />
-        <activity android:name=".Singup"></activity>
+        <activity android:name=".Singup" />
+        <activity android:name=".Singin"></activity>
     </application>
 
 </manifest>

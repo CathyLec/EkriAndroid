@@ -17,7 +17,7 @@ public class Singup extends AppCompatActivity {
     }
     public void Login (View view){
 
-        Intent intent = new Intent(Singup.this, Login.class);
+        Intent intent = new Intent(Singup.this, Singin.class);
         startActivity(intent);
 
     }
