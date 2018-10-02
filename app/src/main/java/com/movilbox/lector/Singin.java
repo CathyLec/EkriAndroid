@@ -21,4 +21,10 @@ public class Singin extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void Textos (View view){
+
+        Intent intent = new Intent(Singin.this, Textos.class);
+        startActivity(intent);
+
+    }
 }

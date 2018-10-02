@@ -76,7 +76,8 @@
             android:layout_marginBottom="24dp"
             android:background="#1E88E5"
             android:padding="8dp"
-            android:text="Create Account" />
+            android:text="Sign in"
+            android:onClick="Textos"/>
 
         <TextView
             android:id="@+id/link_Singup"

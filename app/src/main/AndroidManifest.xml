@@ -14,7 +14,7 @@
         <activity android:name=".Opciones" />
         <activity android:name=".EditorTexto" />
         <activity
-            android:name=".Textos"
+            android:name=".Singin"
             android:configChanges="orientation|screenSize|keyboard">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,7 +36,7 @@
         <activity android:name=".Referencias.Vistas.VistaLugar" />
         <activity android:name=".Referencias.Vistas.VistaPersonaje" />
         <activity android:name=".Singup" />
-        <activity android:name=".Singin"></activity>
+        <activity android:name=".Textos"></activity>
     </application>
 
 </manifest>

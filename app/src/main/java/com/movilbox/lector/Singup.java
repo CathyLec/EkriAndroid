@@ -21,4 +21,10 @@ public class Singup extends AppCompatActivity {
         startActivity(intent);
 
     }
+    public void CreateTextos (View view){
+
+        Intent intent = new Intent(Singup.this, Textos.class);
+        startActivity(intent);
+
+    }
 }
