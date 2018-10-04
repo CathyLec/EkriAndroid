@@ -30,10 +30,10 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_name"
+                android:id="@+id/txtName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Name"
+                android:hint="@string/nombre"
                 android:inputType="textCapWords" />
         </android.support.design.widget.TextInputLayout>
 
@@ -45,10 +45,10 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_email"
+                android:id="@+id/txtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Email"
+                android:hint="@string/email"
                 android:inputType="textEmailAddress" />
         </android.support.design.widget.TextInputLayout>
 
@@ -60,10 +60,10 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_password"
+                android:id="@+id/txtPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Password"
+                android:hint="@string/contrase_a"
                 android:inputType="textPassword" />
         </android.support.design.widget.TextInputLayout>
 
@@ -74,24 +74,23 @@
             android:layout_marginBottom="8dp">
 
             <EditText
-                android:id="@+id/input_password_confirm"
+                android:id="@+id/txtPasswordConfirm"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Confirm password "
+                android:hint="@string/confirmar_contrase_a"
                 android:inputType="textPassword" />
         </android.support.design.widget.TextInputLayout>
 
 
         <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btn_signup"
+            android:id="@+id/btnSignup"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
             android:layout_marginBottom="24dp"
             android:background="#1E88E5"
             android:padding="8dp"
-            android:text="Create Account"
-            android:onClick="CreateTextos"/>
+            android:text="@string/crear_cuenta"/>
 
         <TextView
             android:id="@+id/link_login"
@@ -100,7 +99,7 @@
             android:layout_marginBottom="10dp"
             android:gravity="center"
             android:onClick="Login"
-            android:text="Already a member? Login"
+            android:text="¿Ya eres miembro? Ingresa"
             android:textSize="12dp" />
 
     </LinearLayout>

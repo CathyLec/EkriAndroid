@@ -69,7 +69,7 @@
         </android.support.design.widget.TextInputLayout>
 
         <android.support.v7.widget.AppCompatButton
-            android:id="@+id/btn_signup"
+            android:id="@+id/btn_signin"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
@@ -86,7 +86,7 @@
             android:layout_marginBottom="10dp"
             android:gravity="center"
             android:onClick="SingUp"
-            android:text="Already a member? Login"
+            android:text="¿No tienes cuenta? Registrate aqui"
             android:textSize="12dp" />
 
     </LinearLayout>
